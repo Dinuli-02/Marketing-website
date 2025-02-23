@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawMatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="/lovable-uploads/2265d1f5-25d1-4f75-8ecf-762ea8b94a8b.png" alt="LawMatch Logo" class="nav-logo">
+                LawMatch.
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">All Lawyers</a>
+                <a href="#">Contact</a>
+                <a href="about-us.html">About Us</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-ghost" onclick="openModal('loginModal')">Login</button>
+                <button class="btn btn-accent" onclick="openModal('signupModal')">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <div class="badge">
+                        <span class="badge-accent">New</span>
+                        <span class="badge-text">Try our AI Chat Bot</span>
+                        <span class="badge-arrow">→</span>
+                    </div>
+                    <h1>
+                        How AI is Redefining<br>
+                        <span class="accent">Your legal journey</span>
+                    </h1>
+                    <p>
+                        To provide empowering and transformative legal solutions that cater to each client's distinct vision and needs.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-accent">Try it free</button>
+                        <button class="btn btn-outline">Learn more</button>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <img src="S.jpg" alt="Justice Statue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why Choose LawMatch Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose LawMatch</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Advanced artificial intelligence to streamline your legal processes and provide accurate guidance.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Confidential</h3>
+                    <p>Your data is protected with enterprise-grade security and strict confidentiality protocols.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Access legal assistance and resources whenever you need them, day or night.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost-Effective</h3>
+                    <p>Reduce legal costs while maintaining high-quality service and expert guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Automation Section -->
+    <section class="document-automation">
+        <div class="container">
+            <h2>Document Automation</h2>
+            <div class="automation-content">
+                <div class="automation-text fade-in">
+                    <h3>Streamline Your Legal Documentation</h3>
+                    <p>Transform your legal document creation process with our advanced automation tools.</p>
+                    <ul class="automation-features">
+                        <li><i class="fas fa-check"></i> Automated contract generation</li>
+                        <li><i class="fas fa-check"></i> Smart templates for common legal documents</li>
+                        <li><i class="fas fa-check"></i> E-signature integration</li>
+                        <li><i class="fas fa-check"></i> Version control and tracking</li>
+                    </ul>
+                    <button class="btn btn-accent mt-4">Start Automating</button>
+                </div>
+                <div class="automation-demo fade-in">
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <i class="fas fa-file-contract"></i>
+                            <h4>Contract Generator</h4>
+                        </div>
+                        <div class="demo-content">
+                            <p>Generate legally-binding contracts in minutes</p>
+                            <button class="btn btn-outline">Try Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container fade-in">
+                <h2>See LawMatch in Action</h2>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cotvClgeP7M?si=1J3O_wvf5ZfSzc0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>AI Chat Bot</h3>
+                    <p>An intelligent chatbot that guides users through legal processes, understanding natural language inputs, classifying case types, and providing tailored step-by-step assistance.</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/></svg>
+                    </div>
+                    <h3>Lawyer Appointment Scheduling</h3>
+                    <p>Our Lawyer Appointment Scheduling system is an intelligent tool that analyzes user queries to match them with the most relevant legal professionals. It simplifies the lawyer search process by providing personalized recommendations, available appointment slots, and seamless booking options. Users receive contextualized results based on their legal needs, along with interactive scheduling assistance for a hassle-free experience.p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Location Service</h3>
+                    <p>A geolocation-enabled feature that helps users find nearby legal resources, including courthouses, legal aid, and consultation clinics with advanced filtering options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/lovable-uploads/2265d1f5-25d1-4f75-8ecf-762ea8b94a8b.png" alt="LawMatch Logo" class="footer-logo-img">
+                        <h3>LawMatch.</h3>
+                    </div>
+                    <p>Empowering legal professionals with AI-driven solutions.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/lawmatch.lk?igsh=bDF6a2swemYzZTBz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">AI Chat Bot</a></li>
+                        <li><a href="#">Document Automation</a></li>
+                        <li><a href="#">Lawyer Appointment</a></li>
+                        <li><a href="#">Location Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +94 55 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> lawmatch1@gmail.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LawMatch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-accent">Login</button>
+                <div class="social-auth">
+                    <button type="button" class="btn btn-outline social-btn">
+                        <i class="fab fa-google"></i> Continue with Google
+                    </button>
+                    <button type="button" class="btn btn-outline social-btn">
+                        <i class="fab fa-facebook"></i> Continue with Facebook
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm" class="auth-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn btn-accent">Sign Up</button>
+                <div class="social-auth">
+                    <button type="button" class="btn btn-outline social-btn">
+                        <i class="fab fa-google"></i> Continue with Google
+                    </button>
+                    <button type="button" class="btn btn-outline social-btn">
+                        <i class="fab fa-facebook"></i> Continue with Facebook
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

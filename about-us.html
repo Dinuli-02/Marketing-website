@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LawMatch</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #2a2a2a;
+            --accent: #836f4d;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--primary);
+            color: var(--white);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-box {
+            background: var(--secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .about-box h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .about-team {
+            margin-top: 2rem;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: var(--secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+        }
+
+        .team-member h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        /* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-logo {
+    height: 2.5rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgba(131, 111, 77, 0.9);
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.btn-accent:hover {
+    background-color: rgba(131, 111, 77, 0.9);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--white);
+}
+
+.btn-ghost:hover {
+    color: rgba(131, 111, 77, 0.9);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+/* Enhanced Footer Styles */
+.footer {
+    background-color: var(--primary);
+    padding: 5rem 0 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+    height: 2.5rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.footer-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-section ul a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul a:hover {
+    color: var(--accent);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-info i {
+    color: var(--accent);
+    margin-right: 0.75rem;
+    width: 1.5rem;
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* Enhanced Hover Effects */
+.solution-card,
+.feature-card,
+.demo-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.solution-card:hover,
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .automation-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="/lovable-uploads/2265d1f5-25d1-4f75-8ecf-762ea8b94a8b.png" alt="LawMatch Logo" class="nav-logo">
+                LawMatch.
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">All Lawyers</a>
+                <a href="#">Contact</a>
+                <a href="about-us.html">About Us</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-ghost" onclick="openModal('loginModal')">Login</button>
+                <button class="btn btn-accent" onclick="openModal('signupModal')">Sign up</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="about-title">About Us</h1>
+        
+        <div class="about-box">
+            <h2>Our Vision</h2>
+            <p>We aim to empower individuals with the knowledge and tools they need to navigate legal matters confidently.</p>
+        </div>
+
+        <div class="about-box">
+            <h2>Our Mission</h2>
+            <p>Bridging the gap between people and legal professionals through technology, ensuring access to legal support for all.</p>
+        </div>
+
+        <div class="about-box">
+            <h2>Our Values</h2>
+            <p>Accessibility, Transparency, Innovation, and Empathy drive everything we do.</p>
+        </div>
+        
+        <div class="about-team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="photo8.jpg" alt="Yasuri Kinnara">
+                    <h3>Yasuri Kinnara</h3>
+                    <p>Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="photo9.jpg" alt="Janaya Ransiluni">
+                    <h3>Janaya Ransiluni</h3>
+                    <p>Member 2</p>
+                </div>
+                <div class="team-member">
+                    <img src="m3.jpg" alt="Ahamed Kais">
+                    <h3>Ahamed Kais</h3>
+                    <p>Member 3</p>
+                </div>
+                <div class="team-member">
+                    <img src="m4.jpg" alt="Dinuli Rajapaksha">
+                    <h3>Dinuli Rajapaksha</h3>
+                    <p>Member 4</p>
+                </div>
+                <div class="team-member">
+                    <img src="m5.jpg" alt="Chathumi Rathnasekara">
+                    <h3>Chathumi Rathnasekara</h3>
+                    <p>Member 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/lovable-uploads/2265d1f5-25d1-4f75-8ecf-762ea8b94a8b.png" alt="LawMatch Logo" class="footer-logo-img">
+                        <h3>LawMatch.</h3>
+                    </div>
+                    <p>Empowering legal professionals with AI-driven solutions.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/lawmatch.lk?igsh=bDF6a2swemYzZTBz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">AI Chat Bot</a></li>
+                        <li><a href="#">Document Automation</a></li>
+                        <li><a href="#">Lawyer Appointment</a></li>
+                        <li><a href="#">Location Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +94 55 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> lawmatch1@gmail.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LawMatch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
